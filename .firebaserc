@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "zoned-study-together": {
+      "hosting": {
+        "zoned": [
+          "zoned-study-together"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "zoned-study-together"
+  }
+}

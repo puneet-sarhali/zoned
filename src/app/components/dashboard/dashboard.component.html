@@ -1,1 +1,15 @@
-<p>dashboard works!</p>
+<h1>DashBoard</h1>
+<table>
+    <h2>User Data</h2>
+    <tr>
+        <td>User ID</td>
+        <td>{{ this.auth.userId }}</td>
+    </tr>
+    <tr>
+        <td>User Email</td>
+        <td>{{ this.auth.email }}</td>
+    </tr>
+</table>
+
+
+<button mat-raised-button color="primary" (click)="onSignout()">Sign Out</button>

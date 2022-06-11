@@ -1,1 +1,15 @@
-<p>login works!</p>
+
+<form [formGroup]="loginForm">
+    <mat-form-field>
+        <mat-label>Email:</mat-label>
+        <input matInput placeholder="abc@example.com" formControlName="email">
+        <mat-error *ngIf="email.invalid">Invalid Email</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Password:</mat-label>
+        <input matInput formControlName="password">
+        <mat-error *ngIf="email.invalid">Invalid Password</mat-error>
+    </mat-form-field>
+    <button  (click)="onSignUpSubmit()" mat-raised-button color="primary" >Sign Up</button>
+    <button  (click)="onSignInSubmit()" mat-raised-button color="primary" >Log In</button>
+</form>
